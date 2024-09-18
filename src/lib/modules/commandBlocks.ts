@@ -1,4 +1,4 @@
-import { Block } from 'prismarine-block'
+import { Block } from 'reinarpg-block'
 
 
 export const server = function (serv: Server) {

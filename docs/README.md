@@ -83,10 +83,10 @@ docker-compose up
 
 ## World generation
 
-There are several modules than can be used to generate the world. The default one is called diamond-square
+There are several modules than can be used to generate the world. The default one is called reinarpg-square
 
 * [node-voxel-worldgen](https://github.com/mhsjlw/node-voxel-worldgen): a voxel world generator written in Rust, compatible with flying-squid and allows basic minecraft-like generation including caves.
-* [diamond-square](https://github.com/PrismarineJS/diamond-square): a diamond square minecraft generation.
+* [reinarpg-square](https://github.com/PrismarineJS/reinarpg-square): a diamond square minecraft generation.
 * superflat: a superflat worldgen with configurable blocks and biome.
 
 To install a world generation, all you have to do is npm install it and then change the generation option in settings.json.
@@ -153,6 +153,6 @@ For further examples, see the [examples page](https://PrismarineJS.github.io/fly
  - [@roblabla](https://github.com/roblabla) for helping out with the protocols
  - [@rom1504](https://github.com/rom1504) for massive contributions to the code
  - [@demipixel](https://github.com/demipixel) 
- - The PrismarineJS team for creating prismarine-chunk and node-minecraft-protocol
+ - The PrismarineJS team for creating reinarpg-chunk and node-minecraft-protocol
  - [wiki.vg](http://wiki.vg/Protocol) for documenting minecraft protocols
  - All of our other awesome contributors!

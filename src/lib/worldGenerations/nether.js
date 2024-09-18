@@ -2,8 +2,8 @@ const Vec3 = require('vec3').Vec3
 const rand = require('random-seed')
 
 function generation ({ version, seed, level = 50 } = {}) {
-  const Chunk = require('prismarine-chunk')(version)
-  const mcData = require('minecraft-data')(version)
+  const Chunk = require('reinarpg-chunk')(version)
+  const mcData = require('reinarpg-data')(version)
 
   function generateChunk (chunkX, chunkZ) {
     const seedRand = rand.create(seed + ':' + chunkX + ':' + chunkZ)

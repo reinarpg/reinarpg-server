@@ -1,4 +1,4 @@
-import { Block } from 'prismarine-block'
+import { Block } from 'reinarpg-block'
 import { Vec3 } from 'vec3'
 import { CustomWorld } from './world'
 

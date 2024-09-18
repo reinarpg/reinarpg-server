@@ -1,6 +1,6 @@
 import UserError from '../user_error'
 import { skipMcPrefix } from '../utils'
-import PrismarineItem from 'prismarine-item'
+import PrismarineItem from 'reinarpg-item'
 
 export const server = function (serv: Server, { version }: Options) {
   const mcData = serv.mcData

@@ -1,8 +1,8 @@
 const Vec3 = require('vec3').Vec3
 
 function generation ({ version }) {
-  const Chunk = require('prismarine-chunk')(version)
-  const blocks = require('minecraft-data')(version).blocks
+  const Chunk = require('reinarpg-chunk')(version)
+  const blocks = require('reinarpg-data')(version).blocks
 
   function generateSimpleChunk () {
     const chunk = new Chunk()

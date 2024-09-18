@@ -1,4 +1,4 @@
-import MinecraftData from 'minecraft-data'
+import MinecraftData from 'reinarpg-data'
 
 export const server = (serv: Server, { version }: Options) => {
   const mcData = MinecraftData(version)

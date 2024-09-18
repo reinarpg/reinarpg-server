@@ -2,8 +2,8 @@ const Vec3 = require('vec3').Vec3
 
 function generation (options = {}) {
   const {minY, worldHeight} = options
-  const Chunk = require('prismarine-chunk')(options.version)
-  const mcData = require('minecraft-data')(options.version)
+  const Chunk = require('reinarpg-chunk')(options.version)
+  const mcData = require('reinarpg-data')(options.version)
   const theFlattening = mcData.supportFeature('blockStateId')
 
   const bottomId = options.bottomId || mcData.blocksByName.bedrock.id

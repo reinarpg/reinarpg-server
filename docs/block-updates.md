@@ -3,7 +3,7 @@
 Some blocks have a different id than the item they are spawned from or have a metadata dependent on the placement context. These blocks can be customized by registering an itemPlace handler on the held item type (one handler per item type). For instance, the plugin that customize the signs placement:
 ```javascript
 module.exports.server = (serv, { version }) => {
-  const mcData = require('minecraft-data')(version)
+  const mcData = require('reinarpg-data')(version)
 
   const oakSignType = mcData.blocksByName.standing_sign.id
   const oakWallSignType = mcData.blocksByName.wall_sign.id

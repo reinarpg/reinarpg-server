@@ -1,10 +1,10 @@
 ## 1.5.0
 * Downgrade compramised color package (#549)
 * Added serv.warn() & other small changes (#542)
-* Bump prismarine-entity from 1.2.0 to 2.0.0 (#546)
+* Bump reinarpg-entity from 1.2.0 to 2.0.0 (#546)
 * Update README.md (#543)
 * Bump long from 4.0.0 to 5.1.0 (#538)
-* Bump prismarine-nbt from 1.6.0 to 2.0.0 (#539)
+* Bump reinarpg-nbt from 1.6.0 to 2.0.0 (#539)
 * moved dockerfiles out and updated readme (#511)
 * Create `empty` generation (#537)
 * Merge pull request #519 from para-dise/patch-1
@@ -79,7 +79,7 @@
 * limit the number of entities to options["max-entities"]
 * remove /spawn and /spawnObject
 * update dependencies
-* move diamond-square to its own package
+* move reinarpg-square to its own package
 * add flying-squid-schematic plugin to plugins list
 * add serv.reloadChunk
 
@@ -102,7 +102,7 @@
 * don't spawn in water
 * implement portal creation (no teleporting yet)
 * implement latency
-* use prismarine-world 0.4.0 to implement loading/saving
+* use reinarpg-world 0.4.0 to implement loading/saving
 * add player-list-text config option
 * add everybody-op option
 
@@ -129,7 +129,7 @@
 * proper plugins handling
 * behaviors
 * player inventory (thanks @109C)
-* tests using mineflayer
+* tests using reinarpg-bot
 * unload chunks
 * xp
 * selectors

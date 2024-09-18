@@ -2,7 +2,7 @@
 
 const squid = require('flying-squid')
 const settings = require('../config/default-settings.json')
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 const { Vec3 } = require('vec3')
 const expect = require('expect').default
 
@@ -19,15 +19,15 @@ squid.supportedVersions.forEach((supportedVersion, i) => {
     return
   }
 
-  const mcData = require('minecraft-data')(supportedVersion)
+  const mcData = require('reinarpg-data')(supportedVersion)
   const version = mcData.version
 
-  const Item = require('prismarine-item')(supportedVersion)
+  const Item = require('reinarpg-item')(supportedVersion)
 
-  describe('server with mineflayer connection ' + version.minecraftVersion, () => {
-    /** @type {import('mineflayer').Bot} */
+  describe('server with reinarpg-bot connection ' + version.minecraftVersion, () => {
+    /** @type {import('reinarpg-bot').Bot} */
     let bot
-    /** @type {import('mineflayer').Bot} */
+    /** @type {import('reinarpg-bot').Bot} */
     let bot2
     let serv
     let entityName
@@ -74,13 +74,13 @@ squid.supportedVersions.forEach((supportedVersion, i) => {
 
       await once(serv, 'listening')
       const port = serv._server.socketServer.address().port
-      bot = mineflayer.createBot({
+      bot = reinarpg-bot.createBot({
         host: 'localhost',
         port,
         username: 'bot',
         version: version.minecraftVersion
       })
-      bot2 = mineflayer.createBot({
+      bot2 = reinarpg-bot.createBot({
         host: 'localhost',
         port,
         username: 'bot2',

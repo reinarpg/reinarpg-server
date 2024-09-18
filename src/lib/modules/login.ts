@@ -2,7 +2,7 @@
 import { Vec3 } from 'vec3'
 
 import * as crypto from 'crypto'
-import PrismarineItem from 'prismarine-item'
+import PrismarineItem from 'reinarpg-item'
 import * as playerDat from '../playerDat'
 import * as convertInventorySlotId from '../convertInventorySlotId'
 import { skipMcPrefix } from '../utils'
@@ -93,7 +93,7 @@ export const player = async function (player: Player, serv: Server, settings: Op
 
   async function addPlayer () {
     player.type = 'player'
-    player.crouching = false // Needs added in prismarine-entity later
+    player.crouching = false // Needs added in reinarpg-entity later
     player.op = settings['everybody-op'] ?? false
     player.username = player._client.username
     player.uuid = player._client.uuid
@@ -349,7 +349,7 @@ export const player = async function (player: Player, serv: Server, settings: Op
     player.updateAndSpawn()
 
     announceJoin()
-    // mineflayer emits spawn event on health update so it needs to be done as last step
+    // reinarpg-bot emits spawn event on health update so it needs to be done as last step
     player.updateHealth(player.health)
     player.emit('spawned')
 

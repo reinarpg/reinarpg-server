@@ -7,7 +7,7 @@ const expect = require('expect').default
 squid.supportedVersions.forEach((supportedVersion, i) => {
   if (!(i >= firstVersion && i <= lastVersion)) return
 
-  const mcData = require('minecraft-data')(supportedVersion)
+  const mcData = require('reinarpg-data')(supportedVersion)
   const version = mcData.version
 
   const {

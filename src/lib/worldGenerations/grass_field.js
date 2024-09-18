@@ -1,8 +1,8 @@
 const Vec3 = require('vec3').Vec3
 
 function generation ({ version }) {
-  const Chunk = require('prismarine-chunk')(version)
-  const mcData = require('minecraft-data')(version)
+  const Chunk = require('reinarpg-chunk')(version)
+  const mcData = require('reinarpg-data')(version)
   const theFlattening = mcData.supportFeature('blockStateId')
 
   function generateSimpleChunk () {

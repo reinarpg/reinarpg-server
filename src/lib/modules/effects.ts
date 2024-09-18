@@ -73,7 +73,7 @@ export const server = function (serv: Server, options: Options) {
         targets.forEach(e => {
           let effId = parseInt(params[2])
           if (isNaN(effId)) {
-            const mcData = require('minecraft-data')(options.version)
+            const mcData = require('reinarpg-data')(options.version)
             const effectNamePascal = pascalCase(skipMcPrefix(params[2]))
             const effect = mcData.effectsByName[effectNamePascal]
             if (!effect) throw new UserError(`Unknown effect ${params[2]}}`)

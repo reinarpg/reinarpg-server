@@ -5,7 +5,7 @@ import Command from './lib/command'
 import * as builtinModules from './lib/modules'
 import { EventEmitter } from 'events'
 import { Server as ProtocolServer } from 'minecraft-protocol'
-import { IndexedData } from 'minecraft-data'
+import { IndexedData } from 'reinarpg-data'
 import './types' // include Server declarations from all modules
 import './modules'
 
@@ -63,7 +63,7 @@ class MCServer extends EventEmitter {
     server.cleanupFunctions = [
       () => this.abortController.abort()
     ]
-    const mcData = require('minecraft-data')(options.version)
+    const mcData = require('reinarpg-data')(options.version)
     server.mcData = mcData
     if (mcData === null) throw new Error(`Version ${options.version} is not supported as it doesn't have the data.`)
     const version = mcData.version

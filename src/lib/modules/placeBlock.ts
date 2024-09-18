@@ -1,4 +1,4 @@
-import { Block } from 'prismarine-block'
+import { Block } from 'reinarpg-block'
 import { Vec3 } from 'vec3'
 
 const materialToSound = {
@@ -103,7 +103,7 @@ export const server = (serv: Server, { version }: Options) => {
     blockInteractHandler.set(block.id, handler)
   }
 
-  const PrismarineBlock = require('prismarine-block')(version)
+  const PrismarineBlock = require('reinarpg-block')(version)
   const { blocksArray: blocks } = serv.mcData
   // todo use map for speed
   // doors/gates opening/closing

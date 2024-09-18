@@ -1,5 +1,5 @@
 import { Vec3 } from 'vec3'
-import PrismarineItem, { Item } from 'prismarine-item'
+import PrismarineItem, { Item } from 'reinarpg-item'
 import PrismarineWindows, { Window } from 'prismarine-windows'
 
 export const player = function (player: Player, serv: Server, { version }: Options) {

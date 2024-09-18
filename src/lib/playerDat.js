@@ -2,7 +2,7 @@
 
 import { promises } from 'fs'
 import { Vec3 } from 'vec3'
-import { parse, writeUncompressed } from 'prismarine-nbt'
+import { parse, writeUncompressed } from 'reinarpg-nbt'
 import long from 'long'
 import { gzip } from 'node-gzip'
 import { promisify } from 'util'

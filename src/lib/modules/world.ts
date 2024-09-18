@@ -1,16 +1,16 @@
 import { gzip } from 'node-gzip'
-import nbt from 'prismarine-nbt'
+import nbt from 'reinarpg-nbt'
 
 import { promisify } from 'util'
 import fs from 'fs'
-import { level, Anvil as AnvilLoader } from 'prismarine-provider-anvil'
+import { level, Anvil as AnvilLoader } from 'reinarpg-anvil'
 
 import * as playerDat from '../playerDat'
-import { Chunk, World } from 'prismarine-world/types/world'
-import WorldLoader from 'prismarine-world'
-import ChunkLoader from 'prismarine-chunk'
+import { Chunk, World } from 'reinarpg-world/types/world'
+import WorldLoader from 'reinarpg-world'
+import ChunkLoader from 'reinarpg-chunk'
 import RegistryLoader from 'prismarine-registry'
-import { LevelDatFull } from 'prismarine-provider-anvil/src/level'
+import { LevelDatFull } from 'reinarpg-anvil/src/level'
 import generations from '../generations'
 import { Vec3 } from 'vec3'
 import { generateSpiralMatrix } from '../../utils'
@@ -328,7 +328,7 @@ export const player = function (player: Player, serv: Server, settings: Options)
       x: chunkX,
       z: chunkZ,
       chunk: column
-    }, ({ x, z, chunk }/* : {x, z, chunk: import('prismarine-chunk').PCChunk} */) => {
+    }, ({ x, z, chunk }/* : {x, z, chunk: import('reinarpg-chunk').PCChunk} */) => {
       serv._finishPlayerChunkLoading(chunkX, chunkZ, player)
 
       const newLightsFormat = serv.supportFeature('newLightingDataFormat')
@@ -345,7 +345,7 @@ export const player = function (player: Player, serv: Server, settings: Options)
         bitMap: bitMap,
         ...serv.supportFeature('blockStateId') && serv.looseProtocolMode ? {
           // groundUp: false,
-          // bitMap: undefined // use full mask (e.g. 0xffff is default). workaround for https://github.com/PrismarineJS/prismarine-chunk/issues/205
+          // bitMap: undefined // use full mask (e.g. 0xffff is default). workaround for https://github.com/PrismarineJS/reinarpg-chunk/issues/205
         } : {},
         biomes: chunk.dumpBiomes(),
         ignoreOldData: true, // should be false when a chunk section is updated instead of the whole chunk being overwritten, do we ever do that?
@@ -391,7 +391,7 @@ export const player = function (player: Player, serv: Server, settings: Options)
         if (blockName) {
           let action = actionPerBlockName[blockName]
           if (action === undefined) {
-            if (serv.looseProtocolMode) { // eg mineflayer don't care of action passed here, so lets always send tile entity
+            if (serv.looseProtocolMode) { // eg reinarpg-bot don't care of action passed here, so lets always send tile entity
               action = 0
             } else {
               continue

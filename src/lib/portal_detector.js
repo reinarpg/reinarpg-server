@@ -3,9 +3,9 @@ const flatMap = require('flatmap')
 const range = require('range').range
 
 module.exports = (version) => {
-  const World = require('prismarine-world')(version)
-  const Chunk = require('prismarine-chunk')(version)
-  const mcData = require('minecraft-data')(version)
+  const World = require('reinarpg-world')(version)
+  const Chunk = require('reinarpg-chunk')(version)
+  const mcData = require('reinarpg-data')(version)
   const obsidianType = mcData.blocksByName.obsidian.id
 
   async function findLineInDirection (world, startingPoint, type, direction, directionV) {

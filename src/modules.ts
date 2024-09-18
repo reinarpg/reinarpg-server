@@ -1,7 +1,7 @@
 import { Client } from 'minecraft-protocol'
 import TypedEmitter from 'typed-emitter'
 import EventEmitter from 'events'
-import { IndexedData } from 'minecraft-data'
+import { IndexedData } from 'reinarpg-data'
 
 // all is coherent and stays in the same place
 declare global {

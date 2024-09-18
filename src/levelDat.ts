@@ -1,6 +1,6 @@
 import fs from 'fs'
-import { LevelDatWrite } from 'prismarine-provider-anvil/src/level'
-import nbtModule from 'prismarine-nbt'
+import { LevelDatWrite } from 'reinarpg-anvil/src/level'
+import nbtModule from 'reinarpg-nbt'
 import { promisify } from 'util'
 import zlib from 'zlib'
 
@@ -46,7 +46,7 @@ export async function writeLevelDat (path: string, value: LevelDatWrite & { time
           },
           LevelName: {
             type: 'string',
-            value: value.LevelName ?? 'prismarine-world'
+            value: value.LevelName ?? 'reinarpg-world'
           },
           generatorName: {
             type: 'string',

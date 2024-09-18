@@ -8,7 +8,7 @@ import UserError from '../user_error'
 export const server = function (serv: Server, options: Options) {
   const version = options.version
 
-  const Entity = require('prismarine-entity')(version)
+  const Entity = require('reinarpg-entity')(version)
   const mcData = serv.mcData
   const mobsById = mcData.mobs
   const objectsById = mcData.objects
@@ -222,7 +222,7 @@ export const server = function (serv: Server, options: Options) {
 
 export const player = function (player: Player, serv: Server, options: Options) {
   const version = options.version
-  const Item = require('prismarine-item')(version)
+  const Item = require('reinarpg-item')(version)
 
   player.spawnEntity = entity => {
     player._client.write(entity.spawnPacketName, entity.getSpawnPacket())

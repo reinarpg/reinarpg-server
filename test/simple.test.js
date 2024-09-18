@@ -12,7 +12,7 @@ squid.supportedVersions.forEach((supportedVersion, i) => {
     return
   }
 
-  const mcData = require('minecraft-data')(supportedVersion)
+  const mcData = require('reinarpg-data')(supportedVersion)
   const version = mcData.version
 
   describe(`simple server  ${version.minecraftVersion}`, () => {
