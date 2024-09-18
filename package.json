@@ -49,7 +49,7 @@
     "long": "^5.1.0",
     "reinarpg-data": "github:reinarpg/reinarpg-data",
     "reinarpg-protocol": "github:reinarpg/reinarpg-protocol",
-    "mkdirp": "^2.1.3",
+    "mkdirp": "^3.0.1",
     "node-gzip": "^1.1.2",
     "node-rsa": "^1.1.1",
     "reinarpg-chunk": "github:reinarpg/reinarpg-chunk",
