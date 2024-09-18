@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const net = require('net')
-const squid = require('flying-squid')
+const squid = require('reinarpg-server')
 
 const settings = require('../config/default-settings')
 

@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-const squid = require('flying-squid')
+const squid = require('reinarpg-server')
 const settings = require('../config/default-settings.json')
 const reinarpg-bot = require('reinarpg-bot')
 const { Vec3 } = require('vec3')

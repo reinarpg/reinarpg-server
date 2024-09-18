@@ -96,7 +96,7 @@ export const server = function (serv: Server, { version }: Options) {
     info: 'to get version of the server',
     usage: '/version',
     action () {
-      return 'This server is running flying-squid version ' + version
+      return 'This server is running reinarpg-server version ' + version
     }
   })
 
@@ -105,7 +105,7 @@ export const server = function (serv: Server, { version }: Options) {
     info: 'to bug report',
     usage: '/bug',
     action () {
-      return 'Report bugs or issues here: https://github.com/PrismarineJS/flying-squid/issues'
+      return 'Report bugs or issues here: https://github.com/PrismarineJS/reinarpg-server/issues'
     }
   })
 

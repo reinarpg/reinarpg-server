@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-const squid = require('flying-squid')
+const squid = require('reinarpg-server')
 const { firstVersion, lastVersion } = require('./common/parallel')
 const expect = require('expect').default
 

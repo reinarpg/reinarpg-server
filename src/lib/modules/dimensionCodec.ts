@@ -63,7 +63,7 @@ export const getDimensionCodec = (height, useNewFormat, version) => {
                 type: 'byte',
                 value: 0
               }
-            }, /*, minecraft:overworld_caves is not implemented in flying-squid yet            {
+            }, /*, minecraft:overworld_caves is not implemented in reinarpg-server yet            {
               "name": {
                 "type": "string",
                 "value": "minecraft:overworld_caves"
@@ -177,7 +177,7 @@ export const getDimensionCodec = (height, useNewFormat, version) => {
                 type: 'byte',
                 value: 1
               }
-            }/*, minecraft:the_end is not implemented in flying-squid yet
+            }/*, minecraft:the_end is not implemented in reinarpg-server yet
             {
               "infiniburn": {
                 "type": "string",

@@ -1,5 +1,5 @@
 {
-  "name": "@zardoy/flying-squid",
+  "name": "@zardoy/reinarpg-server",
   "description": "A minecraft server written in TS",
   "version": "0.0.0-dev",
   "main": "dist/index.js",

@@ -69,11 +69,11 @@ For your convenience, you can put your plugin inside /src/plugins. An example mi
 
 You can build Docker image locally like that (positionned in root directory):
 ```bash
-docker build -t prismarinejs/flying-squid . -f deploy/Dockerfile
+docker build -t prismarinejs/reinarpg-server . -f deploy/Dockerfile
 ```
 
 ```bash
-docker run -p 25565:25565 -v $(pwd)/config:/config --name my-flying-squid --rm prismarinejs/flying-squid
+docker run -p 25565:25565 -v $(pwd)/config:/config --name my-reinarpg-server --rm prismarinejs/reinarpg-server
 ```
 
 [docker-compose](https://docs.docker.com/compose/) is useful to quickly launch & stop a single container with a specific configuration, for a more production purpose, it is more frequent to deploy your container(s) in [Kubernetes](https://kubernetes.io) with [Helm](https://helm.sh).
@@ -85,4 +85,4 @@ docker-compose -f deploy/docker-compose.yaml up
 ## Conclusion
 
 In this document, we explained how to create a simple plugin with just one file, but you can cut your code
-in several files by having several inject function and putting them in different files, just like flying-squid does for its internal plugins.
+in several files by having several inject function and putting them in different files, just like reinarpg-server does for its internal plugins.

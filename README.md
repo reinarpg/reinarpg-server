@@ -1,6 +1,6 @@
 # Space Squid
 
-> TypeScript fork of [Flying Squid](https://github.com/PrismarineJS/flying-squid) with a focus on better DX experince for plugins!
+> TypeScript fork of [Flying Squid](https://github.com/PrismarineJS/reinarpg-server) with a focus on better DX experince for plugins!
 
 Minecraft lightweight server written in TypeScript (JS).
 
@@ -14,11 +14,11 @@ Minecraft lightweight server written in TypeScript (JS).
 If you have Node.js installed, you can install `pnpm` or `npm`:
 
 ```bash
-npm i -g @zardoy/flying-squid
+npm i -g @zardoy/reinarpg-server
 ```
 
 ```bash
-flying-squid
+reinarpg-server
 ```
 
 It's recommended to also install `pm2` for process auto-restart on crashes and system reboots.

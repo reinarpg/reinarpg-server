@@ -1,7 +1,7 @@
-const mcServer = require('flying-squid')
+const mcServer = require('reinarpg-server')
 
 mcServer.createMCServer({
-  motd: 'A Minecraft Server \nRunning flying-squid',
+  motd: 'A Minecraft Server \nRunning reinarpg-server',
   port: 25565,
   'max-players': 10,
   'online-mode': true,

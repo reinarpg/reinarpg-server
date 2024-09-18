@@ -73,4 +73,4 @@ We would appreciate it if you could contribute to better Korean translation.
 ## 결론
 
 이 문서에서는 하나의 파일로 간단한 플러그인을 만드는 방법을 설명했지만 코드를 나눌 수 있습니다.
-여러 파일에 여러 가지 기능을 넣고 서로 다른 파일에 넣는 방식으로 만들면, flying-squid을 내부 플러그인 용으로 사용하는 것처럼 됩니다.
+여러 파일에 여러 가지 기능을 넣고 서로 다른 파일에 넣는 방식으로 만들면, reinarpg-server을 내부 플러그인 용으로 사용하는 것처럼 됩니다.

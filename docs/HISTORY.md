@@ -9,7 +9,7 @@
 * Create `empty` generation (#537)
 * Merge pull request #519 from para-dise/patch-1
 * Fix missing return for spawnObject
-* remove flying-squid-modpe
+* remove reinarpg-server-modpe
 * Bump yargs from 16.2.0 to 17.0.1 (#495)
 * Refactor command.js to be clearer (#474)
 * Unload unneeded chunks when players move out of that zone (#492)
@@ -80,7 +80,7 @@
 * remove /spawn and /spawnObject
 * update dependencies
 * move reinarpg-square to its own package
-* add flying-squid-schematic plugin to plugins list
+* add reinarpg-server-schematic plugin to plugins list
 * add serv.reloadChunk
 
 ## 0.5.1
