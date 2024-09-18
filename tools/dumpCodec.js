@@ -1,5 +1,5 @@
 // INFO: this script dumps the latest constant dimension codec from the vanilla 1.16.1 server
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 const path = require('path')
 const fs = require('fs')
 

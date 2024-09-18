@@ -52,7 +52,7 @@ export const player = function (player: Player, serv: Server) {
 }
 
 export const server = function (serv: Server, { version }: Options) {
-  const mcData = require('prismarine-registry')(version)
+  const mcData = require('reinarpg-registry')(version)
   const blocks = mcData.blocks
 
   const postFlatenning = serv.supportFeature('theFlattening')

@@ -1,10 +1,10 @@
-import { createServer } from 'minecraft-protocol'
+import { createServer } from 'reinarpg-protocol'
 
 import { supportedVersions } from './lib/version'
 import Command from './lib/command'
 import * as builtinModules from './lib/modules'
 import { EventEmitter } from 'events'
-import { Server as ProtocolServer } from 'minecraft-protocol'
+import { Server as ProtocolServer } from 'reinarpg-protocol'
 import { IndexedData } from 'reinarpg-data'
 import './types' // include Server declarations from all modules
 import './modules'

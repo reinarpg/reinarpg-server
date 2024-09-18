@@ -4,7 +4,7 @@ import { Vec3 } from 'vec3'
 export const server = (serv: Server, { version }: Options) => {
   serv.once('asap', () => {
     // Importing necessary libraries
-    const registry = require('prismarine-registry')(version)
+    const registry = require('reinarpg-registry')(version)
     // Getting ALL supported blocks
     // Chests
     const blockChest = registry.blocksByName.chest

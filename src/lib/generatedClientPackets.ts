@@ -1,3 +1,4 @@
+
 export interface ClientWriteMap {
   keep_alive: /** 1.7 */ {
     keepAliveId: number
@@ -540,4 +541,4 @@ export interface ClientWriteMap {
   }
 }
 
-export declare const clientOn: <T extends keyof ClientWriteMap>(name: T, callback: (data: ClientWriteMap[T], packetMeta: import('minecraft-protocol').PacketMeta) => void) => void
+export declare const clientOn: <T extends keyof ClientWriteMap>(name: T, callback: (data: ClientWriteMap[T], packetMeta: import('reinarpg-protocol').PacketMeta) => void) => void

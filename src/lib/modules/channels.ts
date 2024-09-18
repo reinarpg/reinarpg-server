@@ -1,4 +1,4 @@
-const PLAY = require('minecraft-protocol').states.PLAY
+const PLAY = require('reinarpg-protocol').states.PLAY
 
 export const player = (player: Player) => {
   player.sendBrand = async (brand = 'flying-squid') => {

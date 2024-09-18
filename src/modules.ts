@@ -1,4 +1,4 @@
-import { Client } from 'minecraft-protocol'
+import { Client } from 'reinarpg-protocol'
 import TypedEmitter from 'typed-emitter'
 import EventEmitter from 'events'
 import { IndexedData } from 'reinarpg-data'

@@ -16,7 +16,7 @@
 * Enable docker build back
 * Moved player health, food, and stamina updates to player.js (#486)
 * Fixed useItem (#476)
-* Bump prismarine-windows from 1.6.0 to 2.0.0 (#471)
+* Bump reinarpg-windows from 1.6.0 to 2.0.0 (#471)
 
 ## 1.4.0
 * Server brand (@GroobleDierne)
