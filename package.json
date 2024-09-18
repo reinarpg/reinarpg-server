@@ -44,7 +44,7 @@
     "colors": "1.4.0",
     "reinarpg-square": "github:reinarpg/reinarpg-square",
     "emit-then": "^2.0.0",
-    "exit-hook": "^2.2.1",
+    "exit-hook": "^4.0.0",
     "flatmap": "^0.0.3",
     "long": "^5.1.0",
     "reinarpg-data": "github:reinarpg/reinarpg-data",
