@@ -26,7 +26,7 @@ export const server: ServerModule = async function (serv, options) {
   generation.options.minY = serv.supportFeature('tallWorld') ? -64 : 0
   levelDatWriter(serv, options)
 
-  const World = WorldLoader(version)
+  const World1 = WorldLoader(version)
   const registry = RegistryLoader(version)
   const worldSaveVersion = _worldSaveVersion ?? version
   const Anvil = worldFolder ? AnvilLoader(worldSaveVersion) : undefined

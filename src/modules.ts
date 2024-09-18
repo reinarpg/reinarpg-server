@@ -77,6 +77,7 @@ declare global {
         minY?: number
         seed?: number
         version?: string
+        level?: number
       }
     }
     kickTimeout?: number
