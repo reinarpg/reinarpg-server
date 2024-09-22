@@ -71,7 +71,7 @@
     "yargs": "^17.0.1"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.0.1",
     "expect": "^29.1.2",
     "longjohn": "^0.2.12",
     "minecraft-wrap": "^1.2.3",
