@@ -1,7 +1,7 @@
 {
   "name": "reinarpg-server",
   "description": "A minecraft server written in TS",
-  "version": "0.0.0-dev",
+  "version": "0.0.1-dev",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": "dist/app.js",
